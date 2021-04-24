@@ -1,0 +1,13 @@
+[Unit]
+Description=WS-2000 Data Streamer
+After=network-online.target
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=pi
+ExecStart=/home/pi/miniconda3/envs/py36/bin/python /home/pi/scripts/ws2000.py
+
+[Install]
+WantedBy=multi-user.target
