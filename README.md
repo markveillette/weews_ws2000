@@ -26,7 +26,7 @@ sudo systemctl enable ws2000.service
 sudo systemctl start ws2000.service
 ```
 
-This will update the files in `/home/pi/ws2000data` constantly so they can be read by the weewx `FileParse` driver.   You should also 
+This will update the files in `/home/pi/ws2000data` constantly so they can be read by the weewx `FileParse` driver.   
 
 * Update the weewx.conf file `/etc/weewx/weewx.conf` using the contents in this repo.
 
